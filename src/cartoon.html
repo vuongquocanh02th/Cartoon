@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Cartoon Streaming</title>
+    <link rel="stylesheet" href="cartoon.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Cartoon Stream</div>
+    </div>
+
+    <div class="head-link">
+        <a href="#">Home</a>
+        <a href="#">Genres</a>
+        <a href="#">Top Cartoons</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Left Content -->
+        <div class="left-content">
+            <ul>
+                <li><a href="#video1" onclick="changeVideo('video1.mp4')">Video 1</a></li>
+                <li><a href="#video2" onclick="changeVideo('video2.mp4')">Video 2</a></li>
+                <li><a href="#youtube" onclick="showYouTube()">YouTube Video</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="right-content" id="video-container">
+            <video id="video-player" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">&copy; 2024 Cartoon Stream. All rights reserved.</div>
+
+    <script src="cartoon.js"></script>
+</body>
+</html>
